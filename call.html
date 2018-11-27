@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="call.css">
+</head>
+<body>
+	<div class="phone">
+		
+		<div class="phone2">
+			<div class="head">
+				<div class="cam"></div>
+				<div class="spk"></div>
+				<div class="cam"></div>
+			</div>
+
+			<div class="screen">
+				<div class="top">
+				
+				<progress value="3" max="5" style="width: 5%;height: 1.5vh; float: right;margin-right: 5px;margin-top: 5px; background-color: lightgreen;"></progress>
+				<i style="float: right;font-size: 12px;margin-top: 4px;margin-right: 5px;">58%</i><img src="net.png" style="float: right;width: 18px;margin-right: 2px;">
+				<span style="font-size: 8pt;font-family: arial black;margin-left: 5px;">MTN NG</span>
+				</div>
+			<input type="text" id="screen" disabled="" name="">
+				<div class="button">
+				<button id="one" onclick="btn(1)">1</button>
+				<button id="two" onclick="btn(2)">2</button>
+				<button id="three" onclick="btn(3)">3</button><br>
+				<button id="four" onclick="btn(3)">4</button>
+				<button id="five" onclick="btn(5)">5</button>
+				<button id="six" onclick="btn(6)">6</button><br>
+				<button id="seven" onclick="btn(7)">7</button>
+				<button id="eight" onclick="btn(8)">8</button>
+				<button id="nine" onclick="btn(9)">9</button><br>
+				<button id="star" onclick="btn('*')">*</button>
+				<button id="zero" onclick="btn(0)">0</button>
+				<button id="hash" onclick="btn('#')">#</button>
+				<img src="fon.png" style="width:12%;margin-left: 41%;margin-top: 0.8%; background: none;">
+			</div>
+			</div>
+			<div class="down">
+			<div class="info"></div>
+			<div class="minimize"></div>
+			<a href="phone.html"><div class="back"></div></a>
+
+			</div>
+
+			
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<script>
+		var ones,twos,threes,fours,fives,sixs,sevens,eights,nines,stars,zeros,hashs, arr = [];
+		  var screen = document.getElementById('screen');
+
+		  function phone() {
+		  	ones = one.value;
+		  	twos = two.value;
+		  	threes = three.value;
+		  	fours = four.value;
+		  	fives = five.value;
+		  	sixs = six.value;
+		  	sevens = seven.value;
+		  	eights = eight.value;
+		  	nines = nine.value;
+		  	stars = star.value;
+		  	zeros = zero.value;
+		  	hashs = hash.value;
+
+		  }
+		  // function one() {
+		  // 	console.log(1);
+		  // 	screen.value += "1";
+		  // }
+
+  		function btn(e) {
+    		 
+      				screen.value += e;
+ 			   
+ 			}
+ 			
+			
+  
+	</script>
+
+</body>
+</html>
