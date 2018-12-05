@@ -8,6 +8,7 @@
 	<div class="phone">
 		
 		<div class="phone2">
+
 			<div class="head">
 				<div class="cam"></div>
 				<div class="spk"></div>
@@ -21,21 +22,52 @@
 				<i style="float: right;font-size: 12px;margin-top: 4px;margin-right: 5px;">58%</i><img src="net.png" style="float: right;width: 18px;margin-right: 2px;">
 				<span style="font-size: 8pt;font-family: arial black;margin-left: 5px;">MTN NG</span>
 				</div>
-			<input type="text" id="screen" disabled="" name="">
+			
+					
+			<div> <div class="item1"> to migrate</div><input type="text" id="screen" disabled="" name=""></div>
+
+	
+			<div class="del" onclick="del()"><img src="book.png">
+		</div>	
 				<div class="button">
-				<button id="one" onclick="btn(1)">1</button>
+					<div class="one1" >
+				<button id="one" value="" onclick="btn(1)">1</button>
+
+			</div>
+			<div class="two1">
 				<button id="two" onclick="btn(2)">2</button>
-				<button id="three" onclick="btn(3)">3</button><br>
+			</div>
+			<div class="three1">
+				<button id="three" onclick="btn(3)">3</button>
+			</div><br>
+			<div class="four1">			
 				<button id="four" onclick="btn(3)">4</button>
+			</div>
+			<div class="five">
 				<button id="five" onclick="btn(5)">5</button>
-				<button id="six" onclick="btn(6)">6</button><br>
-				<button id="seven" onclick="btn(7)">7</button>
+			</div>
+			<div class="six">
+				<button id="six" onclick="btn(6)">6</button>
+			</div><br>
+			<div class="seven">	
+				<button id="seven" onclick="btn(7)">7</but 	ton>
+			</div>
+			<div class="eight">
 				<button id="eight" onclick="btn(8)">8</button>
-				<button id="nine" onclick="btn(9)">9</button><br>
+			</div>
+			<div class="nine">
+				<button id="nine" onclick="btn(9)">9</button>
+			</div><br>
+			<div class="star">
 				<button id="star" onclick="btn('*')">*</button>
+			</div>
+			<div class="zero">
 				<button id="zero" onclick="btn(0)">0</button>
+			</div>
+			<div class="hash">
 				<button id="hash" onclick="btn('#')">#</button>
-				<img src="fon.png" style="width:12%;margin-left: 41%;margin-top: 0.8%; background: none;">
+			</div>
+				<img src="fon.png" onclick="b()" style="width:12%;margin-left: 41%;margin-top: 0.5%; background: none;">
 			</div>
 			</div>
 			<div class="down">
@@ -57,9 +89,10 @@
 
 
 
-
 	</div>
 	<script>
+		var bleep= new Audio();
+		bleep.src ="blop.mp3"
 		var ones,twos,threes,fours,fives,sixs,sevens,eights,nines,stars,zeros,hashs, arr = [];
 		  var screen = document.getElementById('screen');
 
@@ -78,14 +111,18 @@
 		  	hashs = hash.value;
 
 		  }
+		   function del(){
+		     	screen.value=screen.value.slice(0,-1);
+		     }
 		  // function one() {
 		  // 	console.log(1);
 		  // 	screen.value += "1";
 		  // }
-
+		
   		function btn(e) {
     		 
       				screen.value += e;
+      				 bleep.play();
  			   
  			}
  			

@@ -69,20 +69,37 @@ body{
 }
 input{
 	width: 100%;
-	height:43vh;
+	height:38vh;
 	border: none;
 	text-align: right;
-	font-size: 4em;
+	font-size:1em;
 	color: black;
+	background: #cba;
+}
+.del{
+	float: right;
+	width: 20%;
+	margin-right: 1%;
+	height: 2vh;
+}
+.del img{
+	float: right;
+	width: 40%;
+	height: 5vh;
+	margin-top: 0-3%;
+	margin-right: 0%;
 }
 .button{
 	width: 100%;
+	height: 6vh;
 	background-color: transparent;
+	margin-top: 8%;
 	border-top: 2px solid #ccc;
 }
 .screen button{
 	width: 15%;
 	height: 6vh;
+	float: left;
 	margin-left: 13.5%;
 	margin-top: 02.5%;
 	border-radius: 5px;
